@@ -28,6 +28,7 @@ clickHandle=(e)=>{
          return (
           <>
           <h1 className="head">EMPLOYEE FEEDBACK FORM</h1>
+          <br/>
           <form>
           <label htmlFor="name">Name :</label>
           <input id="name" type="text" placeholder="Enter Name" name="Name" value={this.state.Name} onChange={this.changeHandle} required/>
@@ -44,16 +45,19 @@ clickHandle=(e)=>{
           <br/>
           <button id="submit" onClick={this.clickHandle}>Submit</button>
           </form>
-         {
+         
+            <div className="container">
+            {
           this.state.EmpData.map((item,index)=>{
             return (
                 <>
-                <div id="box"></div>
+                <div id="box" key={index}>
                 <span>Name:{item.name} | Department:{item.dept} | Rating:{item.rate}</span>
-                
+                </div>
                 </>
           )
         })}
+        </div>
             </>
          )
     }

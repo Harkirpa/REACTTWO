@@ -11,9 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 } */
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body{
-  height: 595px;
+  height: 650px;
   background:linear-gradient(lightblue,pink,white);
 }
 .head{
@@ -37,13 +41,13 @@ label{
   background-color: rgb(74,211,211);
 }
 #box{
-position:absolute;
- border:5px solid black;
+/* position:absolute; */
+  /* border:5px solid black; */
  top:426px;
  left:35px;
- height:200px;
- width:800px;
- background-color: aquamarine;
+ height:180px;
+ width:819px;
+
 }
 span{
    background-color: pink;
@@ -56,4 +60,16 @@ span{
   margin-top:22px;
   left:50px;
   font-size: larger;
+}
+.container{
+position: relative;
+top:80px;
+left:10px;
+width:90%;
+background-color: rgb(172,233,233);
+border: 2px solid black;
+border-radius: 15px;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
 }
