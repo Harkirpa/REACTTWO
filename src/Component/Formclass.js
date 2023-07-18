@@ -51,9 +51,11 @@ clickHandle=(e)=>{
           this.state.EmpData.map((item,index)=>{
             return (
                 <>
+                <span>
                 <div id="box" key={index}>
-                <span>Name:{item.name} | Department:{item.dept} | Rating:{item.rate}</span>
+                Name:{item.name} | Department:{item.dept} | Rating:{item.rate}
                 </div>
+                </span>
                 </>
           )
         })}
